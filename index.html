@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romantic Gift</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink; /* Pink color ka background */
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .rose-img {
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: red; /* Red color ka background */
+    padding: 10px; /* Padding for spacing */
+  }
+
+  .button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: darkred;
+  }
+
+  .accept-button {
+    margin-top: 20px; /* Add spacing */
+  }
+
+  .reject-button {
+    margin-top: 20px; /* Add spacing */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button class="button" onclick="showGift()">Your Gift Click Me ❤</button>
+  <div id="giftContent" style="display: none;">
+    <img class="rose-img" src="https://i.postimg.cc/3JCnm5XG/pngtree-two-blooming-red-roses-flower-photography-picture-png-image-2677613.png" alt="Red Roses">
+    <button class="button accept-button" onclick="acceptGift()">Yes" Accepted?</button>
+    <button class="button reject-button" onclick="rejectGift()">Reject</button>
+  </div>
+</div>
+
+<script>
+  function showGift() {
+    document.getElementById('giftContent').style.display = 'block';
+  }
+
+  function acceptGift() {
+    window.open('https://wa.me/917077086069?text=Yes', '_blank');
+  }
+
+  function rejectGift() {
+    alert('please accept  sania ...');
+  }
+</script>
+
+</body>
+</html>
